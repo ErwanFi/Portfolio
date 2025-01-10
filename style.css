@@ -289,9 +289,42 @@ body {
     align-self: flex-start;
 }
 #main_competences{
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
+}
+
+.competence{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.title_competence{
+    margin-bottom: 1em;
+}
+
+#liste_competence {
+    counter-reset: list-counter; /* Initialise un compteur */
+}
+
+#liste_competence li {
+    list-style: none; /* Retire la puce par défaut */
+    position: relative;
+    padding-left: 30px; /* Espace pour afficher le numéro */
+    ;
+}
+
+#liste_competence li::before {
+    content: counter(list-counter) ". "; /* Ajoute le numéro devant */
+    counter-increment: list-counter; /* Incrémente le compteur pour chaque li */
+    font-weight: bold; /* Applique le style en gras aux numéros */
+    position: absolute;
+    left: 0;
+    font-size: 20px;
 }
