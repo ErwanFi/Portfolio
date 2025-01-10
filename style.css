@@ -68,6 +68,11 @@ menu {
     top: 2;
     left: 0;
 }
+#img_menu{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
 #menu_button {
     margin-bottom: 1em;
     align-items: center;
