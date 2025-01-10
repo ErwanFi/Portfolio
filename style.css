@@ -329,3 +329,97 @@ body {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+ /* The switch - the box around the slider */
+ .switch {
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Couleur neutre par défaut */
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border: 1px solid #aaa; /* Ajout d'un contour pour plus de contraste */
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  /* Mode sombre activé */
+  input:checked + .slider {
+    background-color: #222; /* Fond sombre */
+    border-color: #444; /* Contour pour correspondre au fond */
+  }
+  
+  input:checked + .slider:before {
+    background-color: #ffdd57; /* Bouton clair dans le mode sombre */
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Effet au focus */
+  input:focus + .slider {
+    box-shadow: 0 0 5px #ffdd57; /* Lumière dorée pour attirer l'attention */
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  
+  .menu_button.dark_mode {
+    color: white !important; /* texte en blanc sur fond noir */
+    background-color: black !important; /* fond noir */
+    border: 1px solid white !important;
+  }
+  
+  .menu_button.light_mode {
+    color: black !important; /* texte en noir sur fond blanc */
+    background-color: white !important; /* fond blanc */
+    border: 1px solid white !important;
+  }
+  .menu_button.dark_mode:hover {
+    background: #181818 !important;
+    color: #c4c4c4 !important;
+  }
+  .menu_button.light_mode:hover{
+    background: #F6F9FE !important;
+    color: #174ea6 !important;
+  }
+  #menu_button:hover {
+   
+}

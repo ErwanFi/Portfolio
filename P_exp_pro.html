@@ -18,13 +18,16 @@
                 <p style="margin-top: 25px; margin-left: 5px;">Étudiant en BUT informatique</p></button></a>
             <menu>
            
-                <a href="index.html"><button id="menu_button">Accueil</button></a>
-                <a href="P_cv.html"><button id="menu_button">CV</button></a>
-                <a href="P_exp_pro.html"><button id="menu_button">Experience professionnel</button></a>
-                <a href="P_contact.html"><button id="menu_button">Contact</button></a>
-                <a href="P_competences.html"><button id="menu_button">Compétences</button></a>
+                <a href="index.html"><button id="menu_button" class="menu_button">Accueil</button></a>
+                <a href="P_cv.html"><button id="menu_button" class="menu_button">CV</button></a>
+                <a href="P_exp_pro.html"><button id="menu_button" class="menu_button">Experience professionnel</button></a>
+                <a href="P_contact.html"><button id="menu_button" class="menu_button">Contact</button></a>
+                <a href="P_competences.html"><button id="menu_button" class="menu_button">Compétences</button></a>
             </menu>
-            <img src="images/IMG_ME.avif" alt="Photo_Erwan" id="img_menu" style="border: 1px solid #fff; border-radius: 50%; width: 5%; height: 10%;">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+              </label>
         </div>
 
     </header>
@@ -40,7 +43,7 @@
                     <img src="images/APP_WEB.png" style="max-width: 491px; max-height: 331px;" alt="Image_APP_WEB">
                 </div>
             </div>
-            <span style="border-bottom: 1px solid black; height: 1px; width:50%; margin-bottom: 2em; margin-top: 2em;"></span> 
+            <span style="border-bottom: 1px solid black; height: 1px; width:50%; margin-bottom: 2em; margin-top: 2em;" class="span"></span> 
             <div class="row_pro">
                 <div class="column_1_pro">
                     <h3>Projet : "Noopy le chien"</h3>
@@ -50,7 +53,7 @@
                     <img src="images/Noopy_le_chien.avif" alt="Image_noopy">
                 </div>
             </div>
-            <span style="border-bottom: 1px solid black; height: 1px; width:50%; margin-bottom: 2em; margin-top: 2em;"></span> 
+            <span style="border-bottom: 1px solid black; height: 1px; width:50%; margin-bottom: 2em; margin-top: 2em;"class="span"></span> 
             <div class="row_pro">
                 <div class="column_1_pro">
                     <h3>Travail de développeur web</h3>
@@ -60,7 +63,7 @@
                     <img src="images/opbs.avif" alt="Image_OPBS">
                 </div>
             </div>
-            <span style="border-bottom: 1px solid black; height: 1px; width:50%; margin-bottom: 2em; margin-top: 2em;"></span> 
+            <span style="border-bottom: 1px solid black; height: 1px; width:50%; margin-bottom: 2em; margin-top: 2em;"class="span"></span> 
             <div class="row_pro">
                 <div class="column_1_pro">
                     <h3>Alternance en développement</h3>
@@ -96,5 +99,6 @@
             </div>
         </div>
     </footer>
+    <script defer src="script.js"></script>
 </body>
 </html>
