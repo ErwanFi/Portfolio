@@ -380,16 +380,14 @@ body {
   }
   
   input:checked + .slider:before {
-    background-color: #ffdd57; /* Bouton clair dans le mode sombre */
+    background-color: #ccc; /* Bouton clair dans le mode sombre */
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
   
   /* Effet au focus */
-  input:focus + .slider {
-    box-shadow: 0 0 5px #ffdd57; /* Lumière dorée pour attirer l'attention */
-  }
+
   
   /* Rounded sliders */
   .slider.round {
