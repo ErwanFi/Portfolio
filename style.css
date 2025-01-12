@@ -40,6 +40,8 @@ menu {
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 
 #menu_img {
@@ -418,6 +420,3 @@ body {
     background: #F6F9FE !important;
     color: #174ea6 !important;
   }
-  #menu_button:hover {
-   
-}
